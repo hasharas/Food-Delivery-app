@@ -1,0 +1,32 @@
+.footer{
+      color: #d9d9d9;
+      background-color: #323232;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      padding: 20px 8vw;
+      padding-top: 80px;
+}
+
+.footer-content{
+      width: 100%;
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr;
+      gap: 80px;
+}
+
+.footer-content-left , .footer-content-right , .footer-content-center {
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      gap: 20px;
+}
+
+.footer-social-icons{
+
+}
+
+.footer-content-center{
+
+}
