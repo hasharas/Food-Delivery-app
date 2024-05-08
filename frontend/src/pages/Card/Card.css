@@ -31,3 +31,83 @@
       cursor: pointer;
       color: rgb(242, 45, 10);
 }
+
+/* card pay part promo cord */
+
+.card-bottom{
+      margin-top: 80px;
+      display: flex;
+      justify-content: space-between;
+      gap: max(12vw, 20px);
+}
+
+.card-totals{
+      flex: 1px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+}
+
+.card-totlal-details{
+      display: flex;
+      justify-content: space-between;
+      color: #555;
+
+}
+
+.card-totals hr{
+      margin: 10px 0px;
+}
+
+.card-totals button{
+      border: none;
+      color: white;
+      background-color: tomato;
+      width: max(15vw,200px);
+      padding: 12px 0px;
+      border-radius: 4px;
+      cursor: pointer;
+}
+
+.card-promocode{
+      flex: 1;
+}
+
+.card-promocode p{
+      color: #555 ;
+}
+
+.card-promocode-input{
+      margin-top: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #eaeaea;
+      border-radius: 4px;
+}
+.card-promocode-input input{
+      background: transparent;
+      border: none;
+      outline: none ;
+      padding-left: 10px;
+}
+
+.card-promocode-input button{
+      width: max(10vw, 150px);
+      padding: 12px 5px;
+      background-color: black;
+      border: none;
+      color: white;
+      border-radius: 4px;
+      cursor: pointer;
+
+}
+
+@media (max-width:750px) {
+      .card-bottom{
+            flex-direction: column-reverse;
+      }
+      .card-promocode{
+            justify-content: start;
+      }
+}
