@@ -53,12 +53,14 @@ const Card = () => {
             <hr />
             <div className="card-totlal-details">
               <p>Delivery Fee</p>
-              <p>${2}</p>
+              <p>${getTotalCardAmount() === 0 ? 0 : 2}</p>
             </div>
             <hr />
             <div className="card-totlal-details">
               <b>Total</b>
-              <b>${getTotalCardAmount() + 2}</b>
+              <b>
+                ${getTotalCardAmount() === 0 ? 0 : getTotalCardAmount() + 2}
+              </b>
             </div>
           </div>
           <button onClick={() => navigate("/order")}>

@@ -29,19 +29,23 @@ const PlaceOrder = () => {
         <div className="card-totals">
           <h2>Card Totals</h2>
           <div>
-            <div className="card-totlal-details">
-              <p>Subtotal</p>
-              <p>${getTotalCardAmount()}</p>
-            </div>
-            <hr />
-            <div className="card-totlal-details">
-              <p>Delivery Fee</p>
-              <p>${2}</p>
-            </div>
-            <hr />
-            <div className="card-totlal-details">
-              <b>Total</b>
-              <b>${getTotalCardAmount() + 2}</b>
+            <div>
+              <div className="card-totlal-details">
+                <p>Subtotal</p>
+                <p>${getTotalCardAmount()}</p>
+              </div>
+              <hr />
+              <div className="card-totlal-details">
+                <p>Delivery Fee</p>
+                <p>${getTotalCardAmount() === 0 ? 0 : 2}</p>
+              </div>
+              <hr />
+              <div className="card-totlal-details">
+                <b>Total</b>
+                <b>
+                  ${getTotalCardAmount() === 0 ? 0 : getTotalCardAmount() + 2}
+                </b>
+              </div>
             </div>
           </div>
           <button>PROCEED TO PAYMENT</button>
