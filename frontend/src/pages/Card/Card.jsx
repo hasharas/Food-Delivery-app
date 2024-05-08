@@ -3,7 +3,8 @@ import React, { useContext } from "react";
 import { StoreContext } from "../../context/StoreContext";
 
 const Card = () => {
-  const { CardItems, food_list, removeFromCard } = useContext(StoreContext);
+  const { CardItems, food_list, removeFromCard, getTotalCardAmount } =
+    useContext(StoreContext);
 
   return (
     <div className="card">
@@ -45,17 +46,17 @@ const Card = () => {
           <div>
             <div className="card-totlal-details">
               <p>Subtotal</p>
-              <p>{0}</p>
+              <p>${getTotalCardAmount()}</p>
             </div>
             <hr />
             <div className="card-totlal-details">
               <p>Delivery Fee</p>
-              <p>{2}</p>
+              <p>${2}</p>
             </div>
             <hr />
             <div className="card-totlal-details">
               <b>Total</b>
-              <b>{0}</b>
+              <b>${getTotalCardAmount() + 2}</b>
             </div>
           </div>
           <button>PROCEED TO CHECKOUT</button>
