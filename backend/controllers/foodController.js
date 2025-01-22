@@ -1,5 +1,5 @@
 import foodModel from "../models/foodModel.js";
-import fc from "fs"
+import fs from "fs"
 
 //add food item
 
