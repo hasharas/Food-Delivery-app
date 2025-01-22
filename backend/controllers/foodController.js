@@ -25,7 +25,7 @@ const addFood = async (req, res) => {
       }
 }
 
-
+//get all food items
 const listFood = async (req, res) => {
       try {
             const foods = await foodModel.find();
@@ -36,4 +36,15 @@ const listFood = async (req, res) => {
       }
 }
 
+
+// remove food item
+
+const removeFood = async (req, res) => {
+      try {
+            const food = await foodModel.findById(req.params.id);
+
+      } catch (error) {
+
+      }
+}
 export { addFood, listFood }
