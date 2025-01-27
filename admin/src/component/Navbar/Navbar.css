@@ -6,7 +6,9 @@
 }
 
 .logo {
+  width: max(10%, 80px);
 }
 
 .profile {
+  width: 50px;
 }
