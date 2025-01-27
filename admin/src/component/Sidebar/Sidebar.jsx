@@ -3,8 +3,12 @@ import "./Sidebar.css";
 
 const Sidebar = () => {
       return (
-            <div>
+            <div className='sidebar'>
+                  <div className='sidebar-options'>
+                        <div className='sidebar-option'>
 
+                        </div>
+                  </div>
             </div>
       );
 }
