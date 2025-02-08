@@ -23,3 +23,9 @@
   border-radius: 3px 0px 0px 3px;
   cursor: pointer;
 }
+
+@media (max-width: 900px) {
+  .sidebar-option p {
+    display: none;
+  }
+}
