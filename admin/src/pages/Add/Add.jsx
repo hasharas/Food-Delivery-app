@@ -13,7 +13,7 @@ const Add = () => {
                               </label>
                               <input type="file" id='image' hidden required className='' />
                         </div>
-                        <div className="add-product-name flex col">
+                        <div className="add-product-name flex-col">
                               <p>Product Name</p>
                               <input type="text" name='name' placeholder='Type hare..' />
                         </div>
@@ -35,12 +35,13 @@ const Add = () => {
                                           <option value="Noodles">Noodles</option>
                                     </select>
                               </div>
-                              <div className="add-price">
+                              <div className="add-price flex-col">
                                     <p>Product Price</p>
                                     <input type="number" placeholder='$20' name='price' />
                               </div>
-                              <button type='submit' className='add-btn' >ADD</button>
+
                         </div>
+                        <button type='submit' className='add-btn' >ADD</button>
                   </form>
 
             </div>
