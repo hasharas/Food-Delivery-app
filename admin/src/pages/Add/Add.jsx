@@ -39,7 +39,7 @@ const Add = () => {
                                     <p>Product Price</p>
                                     <input type="number" placeholder='$20' name='price' />
                               </div>
-                              <button></button>
+                              <button type='submit' className='add-btn' >ADD</button>
                         </div>
                   </form>
 
