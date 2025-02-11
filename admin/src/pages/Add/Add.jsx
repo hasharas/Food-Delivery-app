@@ -24,7 +24,22 @@ const Add = () => {
                         <div className="add-category-price">
                               <div className="add-category flex-col">
                                     <p>Product Category</p>
+                                    <select name="category" id="">
+                                          <option value="Saled">Saled</option>
+                                          <option value="Roles">Roles</option>
+                                          <option value="Desert">Desert</option>
+                                          <option value="Sandwich">Sandwich</option>
+                                          <option value="Cake">Cake</option>
+                                          <option value="Pure veg">Pure veg</option>
+                                          <option value="Pasta">Pasta</option>
+                                          <option value="Noodles">Noodles</option>
+                                    </select>
                               </div>
+                              <div className="add-price">
+                                    <p>Product Price</p>
+                                    <input type="number" placeholder='$20' name='price' />
+                              </div>
+                              <button></button>
                         </div>
                   </form>
 
