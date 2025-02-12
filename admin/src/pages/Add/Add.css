@@ -8,8 +8,8 @@
 .add form {
   gap: 20px;
 }
-.flex-col {
-}
+/* .flex-col {
+} */
 
 .add-image-upload img {
   width: 120px;
@@ -26,6 +26,8 @@
 }
 
 .add-category-price {
+  display: flex;
+  gap: 30px;
 }
 .add-category {
 }
